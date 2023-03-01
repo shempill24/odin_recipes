@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
+
     
     
 }
@@ -25,6 +25,7 @@ body{
 }
 h1{
     text-align: center;
+    color: white;
     padding: 20px;
     font-size: 4em;
     font-family: 'Phudu', cursive;
@@ -72,3 +73,86 @@ a{
     font-family: 'Phudu', cursive;
    
  }
+
+ /* Recipe Pages */
+
+ .wrapper{
+     margin: 50px;
+     background-color: white;
+    border-radius: 25px;
+ }
+ .description{
+     padding: 100px;
+ }
+ .description>h1{
+     color: black;
+ }
+
+ .intro{
+     display: flex;
+ }
+ .intro>img{
+     margin: 50px;
+     border-radius: 50px;
+     width: 400px;
+     height: 700px;
+ }
+ .line.black{
+     margin: 15px 0;
+     background-color: rgb(165, 158, 148);
+ }
+ .ingredients{
+     color: black;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    
+ }
+ .ingredients>h2{
+     padding: 10px;
+ }
+ .ingred>li{
+    list-style-type:circle;
+    position:unset;
+    margin-bottom: 0px;
+ }
+ .multi>h3{
+     font-weight: 600;
+     text-decoration: underline;
+     text-align: center;
+ }
+ .multi-wrapper{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+ .steps>h2{
+    padding: 10px;
+}
+.step>li{
+    list-style-type:decimal;
+    position:unset;
+    margin-bottom: 0px;
+}
+
+/* Return */
+.return{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.return>h2{
+    text-align: center;
+    color: darkgrey;
+    background-color: white;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 15px;
+    border: 1px solid gray;
+    filter: drop-shadow(0 0 15px);
+}
+.return>h2:hover{
+   background-color: grey;
+   color:white;
+}
